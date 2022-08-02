@@ -19,9 +19,9 @@ terraform {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-minfypoc"
-    key    = "terraform.tfstate"
-    region = "eu-west-1"
+    bucket = "aj-prod-ap-south-1-terraform-backend"
+    key    = "terraform/eks/terraform.state"
+    region = "ap-south-1"
   }
 }
 provider "aws" {
